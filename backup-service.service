@@ -1,0 +1,9 @@
+[Unit]
+Description=Backup service.
+
+[Service]
+Type=simple
+ExecStart=/bin/bash /usr/bin/backup-service.sh
+
+[Install]
+WantedBy=multi-user.target
