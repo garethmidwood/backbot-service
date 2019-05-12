@@ -90,8 +90,6 @@ checkSystemRequirements
 
 progress 10
 
-exit;
-
 
 
 
@@ -154,17 +152,3 @@ completeLogEntry
 
 exit 0
 
-
-
-
-
-
-
-
-
-
-
-
-
-sudo cp test_service.sh /usr/bin/test_service.sh
-sudo chmod +x /usr/bin/test_service.sh
