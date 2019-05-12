@@ -1,7 +1,7 @@
 #!/bin/bash
 
 DATE=`date '+%Y-%m-%d %H:%M:%S'`
-echo "Backup started at ${DATE}" | systemd-cat -p info
+echo "backbot started at ${DATE}" | systemd-cat -p info
 
 while :
 do

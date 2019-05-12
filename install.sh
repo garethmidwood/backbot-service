@@ -18,13 +18,13 @@ ICON_ERROR="${ERROR_COLOUR}\xcf\xbf${NO_COLOUR}"
 BINARY_DIR=/usr/bin
 SERVICE_DIR=/lib/systemd/system
 
-RELEASE='https://github.com/garethmidwood/backup-service/raw/master/backup-service.sh'
+RELEASE='https://github.com/garethmidwood/backbot-service/raw/master/backbot.sh'
 TMP_RELEASE_FILE=$(mktemp)
-TARGET_RELEASE_PATH="${BINARY_DIR}/backup-service.sh"
+TARGET_RELEASE_PATH="${BINARY_DIR}/backbot.sh"
 
-SERVICE='https://github.com/garethmidwood/backup-service/raw/master/backup-service.service'
+SERVICE='https://github.com/garethmidwood/backbot-service/raw/master/backbot.service'
 TMP_SERVICE_FILE=$(mktemp)
-TARGET_SERVICE_PATH="${SERVICE_DIR}/backup-service.service"
+TARGET_SERVICE_PATH="${SERVICE_DIR}/backbot.service"
 
 function err {
   log "FATAL ERROR: ${1}"
@@ -135,10 +135,10 @@ else
 fi
 
 log "Enabling service"
-sudo systemctl enable backup-service
+sudo systemctl enable backbot
 
 log "Starting service"
-systemctl start backup-service
+systemctl start backbot
 
 
 progress 100

@@ -1,0 +1,10 @@
+[Unit]
+Description=Backbot service.
+
+[Service]
+Type=simple
+ExecStart=/bin/bash /usr/bin/backbot.sh
+User=backbot
+
+[Install]
+WantedBy=multi-user.target
