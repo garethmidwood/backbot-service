@@ -101,8 +101,8 @@ if curl -LsSo $TMP_RELEASE_FILE $RELEASE ; then
   log "Copying release to $TARGET_RELEASE_PATH"
   if cp $TMP_RELEASE_FILE $TARGET_RELEASE_PATH ; then
     progress 30
-    log "Successfully downloaded release file. Making executable"
-    chmod +x $TARGET_RELEASE_PATH
+    log "Successfully downloaded release file. Making read/executable"
+    chmod +rx $TARGET_RELEASE_PATH
     progress 40
     log "Script is now executable"
   else
