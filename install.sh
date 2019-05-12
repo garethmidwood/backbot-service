@@ -134,6 +134,10 @@ else
   err "Error when downloading service from ${SERVICE}"
 fi
 
+
+log "Creating service user"
+sudo useradd --system backbot
+
 log "Enabling service"
 sudo systemctl enable backbot
 
