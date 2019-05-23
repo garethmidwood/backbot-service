@@ -136,7 +136,15 @@ fi
 
 
 log "Creating service user"
-useradd --system backbot
+if ! id -u backbot; then
+    useradd --system backbot
+fi
+
+if ! which systemctl; then
+    # TODO: Make this less debian-y
+    apt-get update
+    apt-get install systemd
+fi
 
 log "Enabling service"
 systemctl enable backbot
