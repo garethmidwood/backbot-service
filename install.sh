@@ -15,7 +15,7 @@ ICON_INCOMPLETE="${BAR_COLOUR_REMAINING}\xc2\xa2${NO_COLOUR}"
 ICON_COMPLETE="${ICON_COMPLETE_COLOUR}\xcf\xbe${NO_COLOUR}"
 ICON_ERROR="${ERROR_COLOUR}\xcf\xbf${NO_COLOUR}"
 
-BINARY_DIR=/usr/bin
+BINARY_DIR=/usr/local/bin
 SERVICE_DIR=/lib/systemd/system
 
 RELEASE='https://github.com/garethmidwood/backbot-service/raw/master/backbot.sh'
