@@ -136,10 +136,10 @@ fi
 
 
 log "Creating service user"
-sudo useradd --system backbot
+useradd --system backbot
 
 log "Enabling service"
-sudo systemctl enable backbot
+systemctl enable backbot
 
 log "Starting service"
 systemctl start backbot
