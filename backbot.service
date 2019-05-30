@@ -3,7 +3,7 @@ Description=Backbot service.
 
 [Service]
 Type=simple
-ExecStart=/bin/bash /usr/bin/backbot.sh
+ExecStart=/bin/bash /usr/local/bin/backbot.sh
 User=backbot
 
 [Install]
